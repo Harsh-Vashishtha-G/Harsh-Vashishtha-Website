@@ -48,7 +48,7 @@ export default function HVChatWidget() {
   };
 
   return (
-    <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
+    <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999, display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
       {isOpen && (
         <div 
           style={{ 
@@ -232,8 +232,7 @@ export default function HVChatWidget() {
           fontSize: '1.8rem',
           boxShadow: '0 8px 25px rgba(34, 197, 94, 0.4)',
           transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-          transform: isOpen ? 'scale(0.9)' : 'scale(1)',
-          float: 'right'
+          transform: isOpen ? 'scale(0.9)' : 'scale(1)'
         }}
         onMouseEnter={(e) => { if (!isOpen) e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)'; }}
         onMouseLeave={(e) => { if (!isOpen) e.currentTarget.style.transform = 'scale(1)'; }}

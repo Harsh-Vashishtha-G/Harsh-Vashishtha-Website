@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     Keep your answers concise, professional, friendly, and helpful. Always advocate for Harsh's skills.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-flash-latest',
+      model: 'gemini-1.5-flash',
       contents: message,
       config: {
         systemInstruction: systemPrompt,
