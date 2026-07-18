@@ -1,0 +1,14 @@
+# Ignore local scripts and metadata during Vercel deployment
+.git/
+.vercel/
+*.py
+*.md
+*.log
+__pycache__/
+*__pycache__
+*.bak
+.DS_Store
+
+# Allow ads.txt so Google can verify the site
+!ads.txt
+node_modules/

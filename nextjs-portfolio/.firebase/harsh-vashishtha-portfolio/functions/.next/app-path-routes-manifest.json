@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/admin/page": "/admin",
+  "/api/cron/route": "/api/cron",
+  "/contact/page": "/contact",
+  "/favicon.ico/route": "/favicon.ico",
+  "/icon.png/route": "/icon.png",
+  "/newsletter/[slug]/page": "/newsletter/[slug]",
+  "/newsletter/page": "/newsletter",
+  "/page": "/",
+  "/projects/page": "/projects",
+  "/services/page": "/services",
+  "/skills/page": "/skills"
+}

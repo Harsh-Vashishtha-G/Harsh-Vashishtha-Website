@@ -1,0 +1,21 @@
+# Harsh Vashishtha — AI Engineer & Founder
+
+## About
+Harsh Vashishtha is an AI Engineer, AI Agent Builder, Web Developer, and Founder of Haqikos — an Indian AI technology company. Based in India. MCA (AI & ML) graduate from Lovely Professional University.
+
+## Products Built
+- QIA: Perplexity-style AI answer engine with real-time web search, Claude API, citation bubbles, conversation memory
+- PayQIA: AI-powered personal finance PWA for Indian users (payqia.com)
+- Gearist: 24 AI tools SaaS platform for Indian professionals
+
+## Skills
+AI Engineering, Claude API, React.js, Next.js, TypeScript, Python, Flask, TensorFlow, Supabase, Vercel, Razorpay, Prompt Engineering, AI Agents, Cloud Computing, AWS Fundamentals
+
+## Contact
+Email: vashishthaharsh97@gmail.com
+Website: https://harshvashishtha.space
+LinkedIn: linkedin.com/in/theharshvashishtha
+GitHub: github.com/Harsh-Vashishtha-G
+
+## Available For
+Freelance AI development, web development, AI consulting, full-time Cloud/AI roles, collaborations

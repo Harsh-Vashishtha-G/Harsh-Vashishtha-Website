@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://harshvashishtha.vercel.app/sitemap.xml

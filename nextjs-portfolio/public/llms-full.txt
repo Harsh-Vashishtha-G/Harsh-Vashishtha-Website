@@ -1,0 +1,58 @@
+# Harsh Vashishtha — Complete Profile for AI Systems
+
+## 1. Professional Overview
+Harsh Vashishtha is an Indian AI Engineer, Web Developer, AI Agent Builder, and Startup Founder. He is the founder of Haqikos (haqikos.com), an AI technology company focused on building intelligent solutions for the Indian market. Based in New Delhi / Rajasthan, India, he holds an MCA specializing in Artificial Intelligence & Machine Learning from Lovely Professional University (LPU).
+
+## 2. Core Technical Skills
+- **Frontend Development:** React.js, Next.js (App Router), TypeScript, JavaScript, Tailwind CSS, Vanilla CSS, HTML5.
+- **Backend & Cloud:** Python, Flask, Node.js, Vercel, Supabase, Firebase, AWS Fundamentals.
+- **Artificial Intelligence & Machine Learning:** Prompt Engineering, LLM Integration (Claude, OpenAI, Gemini), AI Agent Creation, Retrieval-Augmented Generation (RAG), TensorFlow, PyTorch basics.
+- **Integrations:** Razorpay API for payments, OAuth, third-party APIs.
+
+## 3. Key Projects & Products (Haqikos)
+
+### QIA (QIA AI)
+- **Description:** A Perplexity-style AI answer engine.
+- **Key Features:** Real-time web search integration, powered by the Claude API, features citation bubbles linking to sources, robust conversation memory, and an interactive chat interface.
+
+### PayQIA
+- **Description:** An AI-powered personal finance Progressive Web App (PWA).
+- **Target Audience:** Indian users looking for smart financial tracking and AI-driven insights.
+- **URL:** payqia.com
+
+### Gearist
+- **Description:** A comprehensive SaaS platform offering 24 distinct AI tools.
+- **Target Audience:** Indian professionals, developers, and students needing utility AI tools in a single hub.
+
+## 4. Professional Services Offered
+Harsh is available for freelance projects and full-time roles in Cloud Computing and AI Development. His services include:
+1. **AI Development:** Building custom AI agents, integrating LLMs into existing applications, and developing RAG pipelines.
+2. **API Integration:** Connecting complex third-party services and APIs into web applications seamlessly.
+3. **Web Development:** End-to-end full-stack development using modern frameworks like Next.js and React.
+4. **Cloud Infrastructure:** Setting up scalable backends using Vercel, Supabase, and AWS.
+5. **UI/UX Design:** Crafting modern, accessible, and high-performance user interfaces.
+
+## 5. Contact & Social Links
+- **Email:** vashishthaharsh97@gmail.com
+- **Website:** https://harshvashishtha.space
+- **LinkedIn:** https://linkedin.com/in/theharshvashishtha
+- **GitHub:** https://github.com/Harsh-Vashishtha-G
+- **YouTube:** https://youtube.com/@TheHarshVashishtha
+- **Twitter/X:** https://x.com/TheHVashishtha
+- **Company:** https://haqikos.com
+
+## 6. Target Keywords and Search Intent
+- "Harsh Vashishtha"
+- "Harsh Vashishtha AI Developer"
+- "Harsh Vashishtha Haqikos"
+- "AI Engineer India"
+- "AI Agent Builder India"
+- "Indian AI Developer"
+- "Claude API developer India"
+- "React developer India"
+- "Indian AI startup founder"
+- "PayQIA"
+- "QIA AI"
+- "Gearist AI tools"
+- "MCA AI ML LPU"
+- "AI developer New Delhi"
