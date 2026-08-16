@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate && node fill-newsletter-gap.js"
   },
   "dependencies": {
     "@google/genai": "^2.11.0",
