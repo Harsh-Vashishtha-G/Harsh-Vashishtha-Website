@@ -14,6 +14,16 @@ export default function Page() {
     <div className="eyebrow">WHAT WE DO</div>
     <div className="section-title">Our <em>Services</em></div>
     
+    <div style={{ padding: '1.2rem 1.6rem', background: '#eff6ff', borderRadius: 'var(--radius-md)', border: '1px solid #bfdbfe', marginBottom: '2.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+      <div>
+        <strong style={{ color: '#1e40af', fontSize: '0.95rem', display: 'block' }}>⚡ Looking for instant SaaS starter kits or 1-on-1 architecture advisory?</strong>
+        <span style={{ fontSize: '0.85rem', color: '#2563eb' }}>Explore production Claude &amp; Next.js AI agent boilerplates, prompt playbooks, and strategy sessions.</span>
+      </div>
+      <Link href="/tools" className="btn-dark" style={{ background: '#2563eb', padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+        Visit AI Tools &amp; Store &rarr;
+      </Link>
+    </div>
+
     <div className="services-list">
       {/* 1 */}
       <div className="service-row">

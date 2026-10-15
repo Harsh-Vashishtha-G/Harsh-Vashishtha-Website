@@ -48,6 +48,9 @@ export default async function NewsletterHub({ searchParams }: { searchParams: Pr
             <Link href="#latest" className="btn-outline">
               Read Latest Edition
             </Link>
+            <Link href="/tools" className="btn-outline" style={{ borderStyle: 'dashed', color: '#2563eb', borderColor: '#93c5fd' }}>
+              <i className="ti ti-speakerphone"></i> Sponsor Newsletter
+            </Link>
           </div>
           
           <div style={{ display: "flex", gap: "3rem", justifyContent: "center", marginTop: "4rem", paddingTop: "3rem", borderTop: "1px solid var(--gray-200)", width: "100%" }}>

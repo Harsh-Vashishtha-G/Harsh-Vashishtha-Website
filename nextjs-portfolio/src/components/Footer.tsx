@@ -38,6 +38,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Navigation</h4>
             <ul className="footer-links">
+              <li><Link href="/tools" style={{ color: '#60a5fa', fontWeight: 600 }}>AI Tools &amp; Store (New)</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/projects">Projects</Link></li>
               <li><Link href="/services">Services</Link></li>
@@ -48,10 +49,13 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Products</h4>
+            <h4>Products &amp; Studio</h4>
             <ul className="footer-links">
+              <li><Link href="/tools#prompt-architect">AI Prompt Architect</Link></li>
+              <li><Link href="/tools#cost-calculator">API Cost Estimator</Link></li>
+              <li><Link href="/tools">SaaS Agent Starters</Link></li>
               <li><Link href="https://haqikos.com" target="_blank" rel="noopener">Haqikos</Link></li>
-              <li><Link href="#" target="_blank" rel="noopener">QIA</Link></li>
+              <li><Link href="/qia">QIA Answer Engine</Link></li>
               <li><Link href="https://payqia.com" target="_blank" rel="noopener">PayQIA</Link></li>
             </ul>
           </div>

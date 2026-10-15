@@ -45,6 +45,21 @@ const nextConfig: NextConfig = {
         destination: 'https://www.harshvashishtha.space/:path*',
         permanent: true,
       },
+      {
+        source: '/store',
+        destination: '/tools',
+        permanent: true,
+      },
+      {
+        source: '/resources',
+        destination: '/tools',
+        permanent: true,
+      },
+      {
+        source: '/studio',
+        destination: '/tools',
+        permanent: true,
+      },
     ]
   }
 };

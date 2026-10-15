@@ -43,11 +43,19 @@ export default async function Page() {
       {/* HERO */}
       <div className="hero">
         <div className="hero-left">
-          <div className="avail-badge"><div className="green-dot"></div> Available for freelance work</div>
+          <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '0.5rem' }}>
+            <div className="avail-badge"><div className="green-dot"></div> Available for freelance work</div>
+            <Link href="/tools" className="avail-badge" style={{ textDecoration: 'none', background: '#eff6ff', color: '#1d4ed8', border: '1px solid #bfdbfe' }}>
+              <span className="nav-badge" style={{ margin: 0, padding: '0.1rem 0.35rem', fontSize: '0.6rem' }}>NEW</span> AI Studio Live &rarr;
+            </Link>
+          </div>
           <h1 className="headline">AI Engineer.<br /><em>Builder.</em><br />Founder.</h1>
           <p className="hero-desc">I build intelligent AI products, autonomous agents, and modern web experiences. Founder of Haqikos — An emerging AI technology company based in India.</p>
           <div className="hero-actions">
-            <Link className="btn-dark" href="/assets/resume/Harsh%20Vashishtha%20-%20Resume.pdf" target="_blank" rel="noopener" download="Harsh_Vashishtha_Resume.pdf"><i className="ti ti-download"></i> Resume</Link>
+            <Link className="btn-dark" href="/tools" style={{ background: 'linear-gradient(135deg, #1d4ed8, #0a0a0a)', border: '1px solid #3b82f6' }}>
+              <i className="ti ti-sparkles"></i> AI Tools &amp; Store
+            </Link>
+            <Link className="btn-outline" href="/assets/resume/Harsh%20Vashishtha%20-%20Resume.pdf" target="_blank" rel="noopener" download="Harsh_Vashishtha_Resume.pdf"><i className="ti ti-download"></i> Resume</Link>
             <Link className="btn-outline" href="/projects">View Projects</Link>
             <Link className="btn-icon" href="https://linkedin.com/in/theharshvashishtha" target="_blank" rel="noopener" title="LinkedIn"><i className="ti ti-brand-linkedin"></i></Link>
             <Link className="btn-icon" href="https://github.com/Harsh-Vashishtha-G" target="_blank" rel="noopener" title="GitHub"><i className="ti ti-brand-github"></i></Link>
@@ -60,9 +68,9 @@ export default async function Page() {
               <div className="stat-num">4</div>
               <div className="stat-label">AI Products Built</div>
             </Link>
-            <Link href="https://haqikos.com" target="_blank" rel="noopener noreferrer" className="stat-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-              <div className="stat-num">1</div>
-              <div className="stat-label">Company Founded</div>
+            <Link href="/tools" className="stat-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block', background: '#f8faff', border: '1px solid #bfdbfe' }}>
+              <div className="stat-num" style={{ color: '#2563eb' }}>3+</div>
+              <div className="stat-label">Free AI Tools Live &rarr;</div>
             </Link>
           </div>
           <div className="stat-card dark">
@@ -167,35 +175,126 @@ export default async function Page() {
 
       <div className="divider"></div>
 
-      {/* FEATURED PROJECTS */}
+      {/* FEATURED PROJECTS & PRODUCTS SHOWCASE */}
       <div className="section" id="projects">
-        <div className="eyebrow">Selected Work</div>
-        <div className="section-title">Featured <em>Projects</em></div>
+        <div className="eyebrow">Portfolio &amp; Innovations</div>
+        <div className="section-title">Featured <em>Work &amp; Tools</em></div>
         
-        <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
-          {/* Project 1 */}
-          <Link href="https://haqikos.com" target="_blank" rel="noopener noreferrer" className="bento-card" style={{ textDecoration: 'none', background: 'var(--gray-50)' }}>
-            <div className="bento-icon"><i className="ti ti-brand-openai"></i></div>
-            <div style={{ marginTop: '1rem' }}>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>Haqikos</h3>
-              <p style={{ color: 'var(--gray-600)', marginBottom: '1.5rem' }}>An AI technology startup building autonomous agents, specialized LLM tools, and advanced software infrastructure for the Indian market.</p>
-              <span className="btn-outline" style={{ fontSize: '0.8rem', padding: '0.4rem 0.8rem' }}>Visit Haqikos &rarr;</span>
+        <div className="showcase-grid">
+          {/* Showcase 1: QIA */}
+          <div className="showcase-card">
+            <div className="showcase-media">
+              <span className="showcase-pill-float">AI Answer Engine</span>
+              <span className="showcase-badge-live">● Live App</span>
+              <Image
+                src="/assets/images/qia_showcase.jpg"
+                alt="QIA — Quantum Intelligent Architecture UI Mockup"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
             </div>
-          </Link>
-          
-          {/* Project 2 */}
-          <Link href="https://payqia.com" target="_blank" rel="noopener noreferrer" className="bento-card dark" style={{ textDecoration: 'none' }}>
-            <div className="bento-icon"><i className="ti ti-credit-card"></i></div>
-            <div style={{ marginTop: '1rem' }}>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem', color: '#fff' }}>PayQIA</h3>
-              <p style={{ color: '#aaa', marginBottom: '1.5rem' }}>A next-generation financial technology platform integrating deep AI capabilities with seamless payment infrastructure.</p>
-              <span className="btn-outline" style={{ borderColor: '#333', color: '#fff', fontSize: '0.8rem', padding: '0.4rem 0.8rem' }}>View Platform &rarr;</span>
+            <div className="showcase-body">
+              <div className="showcase-header">
+                <h3 className="showcase-title">QIA — Quantum Intelligent Architecture</h3>
+              </div>
+              <p className="showcase-desc">
+                Perplexity-style AI answer engine with real-time web retrieval, citation bubbles, streaming thought synthesis, and deep research neural graph. Flagship product of Haqikos.
+              </p>
+              <div className="showcase-tags">
+                <span className="showcase-tag">Claude 3.5</span>
+                <span className="showcase-tag">Tavily Web Search</span>
+                <span className="showcase-tag">Next.js / React</span>
+                <span className="showcase-tag">SSE Streaming</span>
+                <span className="showcase-tag">Vector DB</span>
+              </div>
+              <div className="showcase-actions">
+                <Link href="/qia" className="btn-dark" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+                  Try QIA Live &rarr;
+                </Link>
+                <Link href="/projects/qia" className="btn-outline" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+                  Case Study
+                </Link>
+              </div>
             </div>
-          </Link>
+          </div>
+
+          {/* Showcase 2: PayQIA */}
+          <div className="showcase-card">
+            <div className="showcase-media">
+              <span className="showcase-pill-float">Fintech AI Platform</span>
+              <span className="showcase-badge-live" style={{ background: '#0284c7' }}>● PWA System</span>
+              <Image
+                src="/assets/images/payqia_showcase.jpg"
+                alt="PayQIA — AI Personal Finance Assistant Dashboard"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <div className="showcase-body">
+              <div className="showcase-header">
+                <h3 className="showcase-title">PayQIA — AI Financial Assistant</h3>
+              </div>
+              <p className="showcase-desc">
+                Mobile-first PWA for Indian personal finance with an AI assistant that explains bank transactions in natural language, tracks monthly budgets, and generates intelligent saving tips.
+              </p>
+              <div className="showcase-tags">
+                <span className="showcase-tag">Next.js</span>
+                <span className="showcase-tag">TypeScript</span>
+                <span className="showcase-tag">Supabase</span>
+                <span className="showcase-tag">Indian SMS AI</span>
+                <span className="showcase-tag">PWA</span>
+              </div>
+              <div className="showcase-actions">
+                <Link href="https://payqia.com" target="_blank" rel="noopener noreferrer" className="btn-dark" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+                  Visit PayQIA &rarr;
+                </Link>
+                <Link href="/projects/payqia" className="btn-outline" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+                  Case Study
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Showcase 3: AI Developer Studio & Marketplace */}
+          <div className="showcase-card" style={{ border: '2px solid #2563eb' }}>
+            <div className="showcase-media">
+              <span className="showcase-pill-float" style={{ background: '#2563eb' }}>Tools &amp; Store</span>
+              <span className="showcase-badge-live" style={{ background: '#8b5cf6' }}>★ Monetized</span>
+              <Image
+                src="/assets/images/ai_tools_studio.jpg"
+                alt="AI Tools Studio & Digital Marketplace"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <div className="showcase-body">
+              <div className="showcase-header">
+                <h3 className="showcase-title">AI Tools &amp; Developer Studio</h3>
+              </div>
+              <p className="showcase-desc">
+                Interactive utilities for developers: AI Prompt Architect, API Token Cost Calculator, production Next.js AI agent boilerplates, and 1-on-1 architecture strategy consultations.
+              </p>
+              <div className="showcase-tags">
+                <span className="showcase-tag">Free Prompt Optimizer</span>
+                <span className="showcase-tag">Cost Estimator</span>
+                <span className="showcase-tag">Agent Starters</span>
+                <span className="showcase-tag">1-on-1 Advisory</span>
+              </div>
+              <div className="showcase-actions">
+                <Link href="/tools" className="btn-dark" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem', background: '#2563eb' }}>
+                  Explore Studio &amp; Store &rarr;
+                </Link>
+                <Link href="/tools#cost-calculator" className="btn-outline" style={{ padding: '0.45rem 1rem', fontSize: '0.82rem' }}>
+                  Cost Calculator
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div style={{ textAlign: 'center' }}>
-          <Link href="/projects" className="btn-outline">View all projects &rarr;</Link>
+          <Link href="/projects" className="btn-outline" style={{ marginRight: '1rem' }}>View all projects &rarr;</Link>
+          <Link href="/tools" className="btn-dark">Visit AI Tools Studio &rarr;</Link>
         </div>
       </div>
 
