@@ -41,36 +41,134 @@
 <nav>
   <a href="index.html" class="nav-logo">Harsh Vashishtha</a>
   <ul class="nav-links">
+    <li><a href="tools.html" style="display:inline-flex;align-items:center;font-weight:600;color:var(--black);">Tools &amp; Store <span class="nav-badge">Hot</span></a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="skills.html">Skills</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div style="display:flex;gap:0.6rem;align-items:center;">
-    <a class="nav-cta" href="mailto:vashishthaharsh97@gmail.com">Hire me</a>
+    <a class="nav-cta" href="tools.html">Visit Studio &rarr;</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
       <i class="ti ti-menu-2"></i>
     </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
+  <a href="tools.html" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;"><span>Tools &amp; Store</span> <span class="nav-badge">Hot</span></a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
   <a href="services.html">Services</a>
   <a href="skills.html">Skills</a>
   <a href="contact.html">Contact</a>
-  <a href="mailto:vashishthaharsh97@gmail.com" style="font-weight:600;color:#0a0a0a;">Hire me →</a>
+  <a href="tools.html" style="font-weight:600;color:#0a0a0a;">Explore AI Studio →</a>
 </div>
 
 <main>
   <!-- PROJECTS -->
   <div class="section" id="projects">
-    <div class="eyebrow">Work</div>
-    <div class="section-title">Selected <em>projects</em></div>
-    <p class="hero-desc" style="margin-top: -1.5rem; margin-bottom: 2.5rem;">A collection of my work in AI, web development, and product building.</p>
+    <div class="eyebrow">Work &amp; Innovations</div>
+    <div class="section-title">Selected <em>Projects</em></div>
+    <p class="hero-desc" style="margin-top: -1.5rem; margin-bottom: 2.5rem;">A collection of my work in AI, autonomous agents, fintech, and product building.</p>
+
+    <!-- MEDIA SHOWCASE GRID -->
+    <div class="showcase-grid" style="margin-bottom: 3.5rem;">
+      <!-- 01: QIA -->
+      <div class="showcase-card">
+        <div class="showcase-media">
+          <span class="showcase-pill-float">AI Answer Engine</span>
+          <span class="showcase-badge-live">● Live App</span>
+          <img src="/assets/images/qia_showcase.jpg" alt="QIA — Quantum Intelligent Architecture UI Mockup" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="showcase-body">
+          <div class="showcase-header">
+            <h2 class="showcase-title">01 · QIA (Quantum Intelligent Architecture)</h2>
+          </div>
+          <p class="showcase-desc">
+            Perplexity-style AI answer engine with real-time web search, citation chips, streaming typewriter synthesis, and conversation memory. Flagship AI product of Haqikos engineered for accuracy and transparent citations.
+          </p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Claude 3.5 Sonnet</span>
+            <span class="showcase-tag">Tavily Web API</span>
+            <span class="showcase-tag">React.js</span>
+            <span class="showcase-tag">SSE Streaming</span>
+          </div>
+          <div class="showcase-actions">
+            <a class="btn-dark" href="#qia" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+              Read Deep Case Study &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02: PayQIA -->
+      <div class="showcase-card">
+        <div class="showcase-media">
+          <span class="showcase-pill-float">Fintech AI Assistant</span>
+          <span class="showcase-badge-live" style="background: #0284c7;">● PWA System</span>
+          <img src="/assets/images/payqia_showcase.jpg" alt="PayQIA — AI Personal Finance Assistant Dashboard" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="showcase-body">
+          <div class="showcase-header">
+            <h2 class="showcase-title">02 · PayQIA — Personal Finance AI</h2>
+          </div>
+          <p class="showcase-desc">
+            Mobile-first progressive web application for Indian personal finance with an AI assistant that explains bank transactions in natural language, tracks monthly budgets, and generates smart saving tips.
+          </p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Next.js / React</span>
+            <span class="showcase-tag">TypeScript</span>
+            <span class="showcase-tag">Supabase</span>
+            <span class="showcase-tag">Tailwind CSS</span>
+            <span class="showcase-tag">PWA</span>
+          </div>
+          <div class="showcase-actions">
+            <a class="btn-dark" href="https://payqia.com" target="_blank" rel="noopener noreferrer" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+              Visit PayQIA &rarr;
+            </a>
+            <a class="btn-outline" href="#payqia" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+              Case Study
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03: AI Developer Studio -->
+      <div class="showcase-card" style="border: 2px solid #2563eb;">
+        <div class="showcase-media">
+          <span class="showcase-pill-float" style="background: #2563eb;">Interactive Tools &amp; Store</span>
+          <span class="showcase-badge-live" style="background: #8b5cf6;">★ Monetized</span>
+          <img src="/assets/images/ai_tools_studio.jpg" alt="AI Tools Studio & Digital Marketplace" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="showcase-body">
+          <div class="showcase-header">
+            <h2 class="showcase-title">03 · AI Developer Studio &amp; Marketplace</h2>
+          </div>
+          <p class="showcase-desc">
+            Interactive developer suite featuring free AI Prompt Architect, Token Cost Calculator, Next.js AI agent production starter kits, and 1-on-1 strategy sessions.
+          </p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Prompt Architect</span>
+            <span class="showcase-tag">Token Calculator</span>
+            <span class="showcase-tag">SaaS Boilerplates</span>
+            <span class="showcase-tag">Advisory</span>
+          </div>
+          <div class="showcase-actions">
+            <a class="btn-dark" href="tools.html" style="padding: 0.45rem 1rem; font-size: 0.82rem; background: #2563eb;">
+              Open AI Studio &rarr;
+            </a>
+            <a class="btn-outline" href="tools.html#kits" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+              Browse Starter Kits
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
     
-    <div>
+    <div style="margin-top: 3rem;">
       <div class="project-row" id="qia">
         <div class="proj-num">01</div>
         <div>

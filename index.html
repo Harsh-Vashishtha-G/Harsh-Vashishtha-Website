@@ -58,6 +58,7 @@
 <nav>
   <a href="index.html" class="nav-logo">Harsh Vashishtha</a>
   <ul class="nav-links">
+    <li><a href="tools.html" style="display:inline-flex;align-items:center;font-weight:600;color:var(--black);">Tools &amp; Store <span class="nav-badge">Hot</span></a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="services.html">Services</a></li>
@@ -65,29 +66,36 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div style="display:flex;gap:0.6rem;align-items:center;">
-    <a class="nav-cta" href="mailto:vashishthaharsh97@gmail.com">Hire me</a>
+    <a class="nav-cta" href="tools.html">Visit Studio &rarr;</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
       <i class="ti ti-menu-2"></i>
     </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
+  <a href="tools.html" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;"><span>Tools &amp; Store</span> <span class="nav-badge">Hot</span></a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
   <a href="services.html">Services</a>
   <a href="skills.html">Skills</a>
   <a href="contact.html">Contact</a>
-  <a href="mailto:vashishthaharsh97@gmail.com" style="font-weight:600;color:#0a0a0a;">Hire me →</a>
+  <a href="tools.html" style="font-weight:600;color:#0a0a0a;">Explore AI Studio →</a>
 </div>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="avail-badge"><div class="green-dot"></div> Available for freelance work</div>
+    <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.5rem;">
+      <div class="avail-badge"><div class="green-dot"></div> Available for freelance work</div>
+      <a href="tools.html" class="avail-badge" style="text-decoration:none;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;">
+        <span class="nav-badge" style="margin:0;padding:0.1rem 0.35rem;font-size:0.6rem;">NEW</span> AI Studio Live &rarr;
+      </a>
+    </div>
     <h1 class="headline">AI Developer.<br><em>Builder.</em><br>Founder.</h1>
     <p class="hero-desc">I build intelligent AI products, autonomous agents, and modern web experiences. Founder of Haqikos — An emerging AI technology company based in India.</p>
     <div class="hero-actions">
-      <a class="btn-dark" href="/assets/resume/Harsh%20Vashishtha%20-%20Resume.pdf" target="_blank" rel="noopener" download="Harsh_Vashishtha_Resume.pdf"><i class="ti ti-download"></i> Resume</a>
+      <a class="btn-dark" href="tools.html" style="background:linear-gradient(135deg, #1d4ed8, #0a0a0a);border:1px solid #3b82f6;"><i class="ti ti-sparkles"></i> AI Tools &amp; Store</a>
+      <a class="btn-outline" href="/assets/resume/Harsh%20Vashishtha%20-%20Resume.pdf" target="_blank" rel="noopener" download="Harsh_Vashishtha_Resume.pdf"><i class="ti ti-download"></i> Resume</a>
       <a class="btn-outline" href="projects.html">View Projects</a>
       <a class="btn-icon" href="https://linkedin.com/in/theharshvashishtha" target="_blank" rel="noopener" title="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
       <a class="btn-icon" href="https://github.com/Harsh-Vashishtha-G" target="_blank" rel="noopener" title="GitHub"><i class="ti ti-brand-github"></i></a>
@@ -97,13 +105,13 @@
   <div class="hero-right">
     <div class="stat-row">
       <div class="stat-card">
-        <div class="stat-num">3+</div>
+        <div class="stat-num">4</div>
         <div class="stat-label">AI Products Built</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">1</div>
-        <div class="stat-label">Company Founded</div>
-      </div>
+      <a href="tools.html" class="stat-card" style="text-decoration:none;color:inherit;display:block;background:#f8faff;border:1px solid #bfdbfe;">
+        <div class="stat-num" style="color:#2563eb;">3+</div>
+        <div class="stat-label">Free AI Tools Live &rarr;</div>
+      </a>
     </div>
     <div class="stat-card dark">
       <div class="haqikos-name">Haqikos</div>
@@ -155,8 +163,97 @@
   </div>
 </div>
 
-<div class="divider"></div>
+<!-- FEATURED PROJECTS & PRODUCTS SHOWCASE -->
+<div class="section" id="projects">
+  <div class="eyebrow">Portfolio &amp; Innovations</div>
+  <div class="section-title">Featured <em>Work &amp; Tools</em></div>
+  
+  <div class="showcase-grid">
+    <!-- Showcase 1: QIA -->
+    <div class="showcase-card">
+      <div class="showcase-media">
+        <span class="showcase-pill-float">AI Answer Engine</span>
+        <span class="showcase-badge-live">● Live App</span>
+        <img src="/assets/images/qia_showcase.jpg" alt="QIA — Quantum Intelligent Architecture UI Mockup" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-header">
+          <h3 class="showcase-title">QIA — Quantum Intelligent Architecture</h3>
+        </div>
+        <p class="showcase-desc">
+          Perplexity-style AI answer engine with real-time web retrieval, citation bubbles, streaming thought synthesis, and deep research neural graph. Flagship product of Haqikos.
+        </p>
+        <div class="showcase-tags">
+          <span class="showcase-tag">Claude 3.5</span>
+          <span class="showcase-tag">Tavily Web Search</span>
+          <span class="showcase-tag">React.js</span>
+          <span class="showcase-tag">SSE Streaming</span>
+        </div>
+        <div class="showcase-actions">
+          <a href="projects.html#qia" class="btn-dark" style="padding:0.45rem 1rem;font-size:0.82rem;">Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Showcase 2: PayQIA -->
+    <div class="showcase-card">
+      <div class="showcase-media">
+        <span class="showcase-pill-float">Fintech AI Platform</span>
+        <span class="showcase-badge-live" style="background:#0284c7;">● PWA System</span>
+        <img src="/assets/images/payqia_showcase.jpg" alt="PayQIA — AI Financial Assistant" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-header">
+          <h3 class="showcase-title">PayQIA — AI Financial Assistant</h3>
+        </div>
+        <p class="showcase-desc">
+          Mobile-first PWA for Indian personal finance with an AI assistant that explains bank transactions in natural language, tracks monthly budgets, and generates intelligent saving tips.
+        </p>
+        <div class="showcase-tags">
+          <span class="showcase-tag">React</span>
+          <span class="showcase-tag">TypeScript</span>
+          <span class="showcase-tag">Supabase</span>
+          <span class="showcase-tag">Indian SMS AI</span>
+        </div>
+        <div class="showcase-actions">
+          <a href="https://payqia.com" target="_blank" rel="noopener noreferrer" class="btn-dark" style="padding:0.45rem 1rem;font-size:0.82rem;">Visit PayQIA &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Showcase 3: AI Developer Studio -->
+    <div class="showcase-card" style="border:2px solid #2563eb;">
+      <div class="showcase-media">
+        <span class="showcase-pill-float" style="background:#2563eb;">Tools &amp; Store</span>
+        <span class="showcase-badge-live" style="background:#8b5cf6;">★ Monetized</span>
+        <img src="/assets/images/ai_tools_studio.jpg" alt="AI Tools Studio & Digital Marketplace" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+      <div class="showcase-body">
+        <div class="showcase-header">
+          <h3 class="showcase-title">AI Tools &amp; Developer Studio</h3>
+        </div>
+        <p class="showcase-desc">
+          Interactive developer suite featuring free AI Prompt Architect, Token Cost Calculator, Next.js AI agent production starter kits, and 1-on-1 strategy consultations.
+        </p>
+        <div class="showcase-tags">
+          <span class="showcase-tag">Prompt Optimizer</span>
+          <span class="showcase-tag">Cost Calculator</span>
+          <span class="showcase-tag">SaaS Boilerplates</span>
+        </div>
+        <div class="showcase-actions">
+          <a href="tools.html" class="btn-dark" style="padding:0.45rem 1rem;font-size:0.82rem;background:#2563eb;">Open AI Studio &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="projects.html" class="btn-outline" style="margin-right:1rem;">View all projects &rarr;</a>
+    <a href="tools.html" class="btn-dark">Visit AI Tools Studio &rarr;</a>
+  </div>
+</div>
+
+<div class="divider"></div>
 
 <!-- CONTACT -->
 <div class="section" id="contact" style="padding-bottom:2rem;">

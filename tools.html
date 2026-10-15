@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Developer Studio & Monetization Hub — Free Tools, Kits & Advisory | Harsh Vashishtha</title>
+  <meta name="description" content="Free interactive AI Prompt Architect, Token & Monthly API Cost Calculator, Claude & Next.js AI Agent Starter Kits, and 1-on-1 AI strategy advisory by Harsh Vashishtha." />
+  <meta name="keywords" content="AI Tools, AI Prompt Generator, AI Cost Calculator, Claude API Starter Kit, Next.js AI Boilerplate, AI Agent Builder India, Harsh Vashishtha, Haqikos" />
+  <meta name="author" content="Harsh Vashishtha" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Developer Studio & Marketplace — Free Tools & Starter Kits | Harsh Vashishtha" />
+  <meta property="og:description" content="Free AI prompt generators, token cost estimators, production Next.js agent boilerplates, and 1-on-1 AI strategy advisory." />
+  <meta property="og:image" content="/assets/images/ai_tools_studio.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harshvashishtha.space/tools" />
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6625278402778620" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6625278402778620" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Harsh Vashishtha</a>
+  <ul class="nav-links">
+    <li><a href="tools.html" style="display:inline-flex;align-items:center;font-weight:600;color:var(--black);">Tools &amp; Store <span class="nav-badge">Hot</span></a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div style="display:flex;gap:0.6rem;align-items:center;">
+    <a class="nav-cta" href="#kits">Explore Store &rarr;</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <i class="ti ti-menu-2"></i>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="tools.html" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;"><span>Tools &amp; Store</span> <span class="nav-badge">Hot</span></a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+  <a href="#kits" style="font-weight:600;color:#0a0a0a;">Explore Store →</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="tools-hero">
+  <div class="tools-hero-badge">
+    <i class="ti ti-sparkles"></i> AI Tools &amp; Monetization Studio
+  </div>
+  <h1 class="headline" style="margin-bottom: 1.2rem;">
+    Interactive AI Tools &amp; <br />
+    <em>Developer Marketplace</em>
+  </h1>
+  <p class="hero-desc" style="max-width: 720px; margin: 0 auto 2rem; font-size: 1.05rem;">
+    Free high-performance developer utilities, battle-tested AI SaaS starter boilerplates, enterprise prompt engineering playbooks, and 1-on-1 AI strategy advisory by Harsh Vashishtha.
+  </p>
+
+  <!-- Tab Navigation -->
+  <div class="tools-tabs-nav">
+    <button class="tools-tab-btn active" id="tabBtn-tools" onclick="switchTab('tools')">
+      <i class="ti ti-tools"></i> Free Interactive Tools
+    </button>
+    <button class="tools-tab-btn" id="tabBtn-kits" onclick="switchTab('kits')">
+      <i class="ti ti-package"></i> Digital Kits &amp; Boilerplates
+      <span class="nav-badge" style="margin-left: 0.4rem; font-size: 0.6rem;">Store</span>
+    </button>
+    <button class="tools-tab-btn" id="tabBtn-advisory" onclick="switchTab('advisory')">
+      <i class="ti ti-user-check"></i> 1-on-1 Advisory &amp; Audits
+    </button>
+    <button class="tools-tab-btn" id="tabBtn-sponsor" onclick="switchTab('sponsor')">
+      <i class="ti ti-speakerphone"></i> Newsletter Sponsorship
+    </button>
+  </div>
+</section>
+
+<div style="max-width: 1100px; margin: 0 auto; padding: 0 2.5rem;">
+
+  <!-- ── TAB 1: FREE INTERACTIVE TOOLS ── -->
+  <div id="tabContent-tools">
+    
+    <!-- TOOL 1: PROMPT ARCHITECT -->
+    <div class="interactive-tool-card" id="prompt-architect">
+      <div class="tool-heading-row">
+        <div>
+          <div class="eyebrow" style="color: #2563eb;">UTILITY 01</div>
+          <h2 class="tool-title">AI Prompt Architect &amp; System Prompt Generator</h2>
+          <p class="tool-subtitle">Convert casual prompts into production-grade, structured system prompts for Claude, GPT-4o, and Gemini.</p>
+        </div>
+        <span class="tool-badge-free">100% Free Tool</span>
+      </div>
+
+      <!-- Presets -->
+      <div class="preset-chips-row">
+        <span style="font-size: 0.78rem; color: var(--gray-500); font-weight: 600;">Quick Presets:</span>
+        <button type="button" class="preset-chip-btn" onclick="applyPreset('Build an autonomous Next.js AI chatbot with Claude API streaming and Supabase')">
+          ⚡ Next.js AI Chatbot
+        </button>
+        <button type="button" class="preset-chip-btn" onclick="applyPreset('Architect an autonomous web research agent that searches the web and returns cited summaries')">
+          🔍 Web Research Agent
+        </button>
+        <button type="button" class="preset-chip-btn" onclick="applyPreset('Perform a security and performance code review on a TypeScript React application')">
+          🛡️ Security &amp; Code Reviewer
+        </button>
+        <button type="button" class="preset-chip-btn" onclick="applyPreset('Design a personal finance expense categorizer for Indian bank statements and UPI receipts')">
+          💳 Fintech UPI Classifier
+        </button>
+      </div>
+
+      <!-- Controls Grid -->
+      <div class="tool-controls-grid">
+        <div class="tool-input-group">
+          <label class="tool-label">Target Model</label>
+          <select class="tool-select" id="modelSelect">
+            <option>Claude 3.7 / 3.5 Sonnet</option>
+            <option>Claude 3.5 Haiku</option>
+            <option>OpenAI GPT-4o</option>
+            <option>Google Gemini 2.5 Flash</option>
+            <option>DeepSeek-R1 (Reasoning)</option>
+          </select>
+        </div>
+
+        <div class="tool-input-group">
+          <label class="tool-label">System Persona</label>
+          <select class="tool-select" id="personaSelect">
+            <option>System Architect &amp; Engineer</option>
+            <option>Senior Full-Stack Developer</option>
+            <option>Autonomous Agent Runtime</option>
+            <option>Fintech &amp; Data Analyst</option>
+            <option>Security &amp; Compliance Auditor</option>
+          </select>
+        </div>
+
+        <div class="tool-input-group">
+          <label class="tool-label">Format Standard</label>
+          <select class="tool-select" id="formatSelect">
+            <option>XML Tagged Production Spec</option>
+            <option>JSON Schema &amp; Function Calling</option>
+            <option>Markdown Step-by-Step Blueprint</option>
+            <option>Strict Chain-of-Thought (CoT)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="tool-input-group" style="margin-bottom: 1.5rem;">
+        <label class="tool-label">Your Raw Prompt or Desired Behavior</label>
+        <textarea class="tool-textarea" id="userPromptInput" placeholder="Describe what you want the AI to do...">Create an autonomous customer support AI agent for a SaaS platform</textarea>
+      </div>
+
+      <!-- Generate Button -->
+      <button type="button" class="tool-action-btn" id="generatePromptBtn" onclick="generatePrompt()">
+        <i class="ti ti-sparkles"></i> Generate Structured System Prompt
+      </button>
+
+      <!-- Output Box -->
+      <div class="tool-output-box" id="promptOutputBox" style="display: none;">
+        <div class="tool-output-header">
+          <span class="tool-output-title">
+            <i class="ti ti-code"></i> Production Ready System Prompt
+          </span>
+          <button type="button" id="copyPromptBtn" onclick="copyPrompt()" style="background: #334155; color: #fff; border: none; padding: 0.35rem 0.85rem; border-radius: 4px; font-size: 0.78rem; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;">
+            <i class="ti ti-copy" id="copyIcon"></i> <span id="copyText">Copy Prompt</span>
+          </button>
+        </div>
+        <pre class="tool-output-code" id="promptOutputCode"></pre>
+      </div>
+
+      <!-- Upsell Callout -->
+      <div style="margin-top: 1.8rem; padding: 1rem 1.4rem; background: #eff6ff; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div style="font-size: 0.88rem; color: #1e40af;">
+          <strong>Need 100+ production prompts?</strong> Get our tested System Prompt Master Playbook with XML guardrails &amp; RAG schemas.
+        </div>
+        <button onclick="switchTab('kits')" class="btn-dark" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">
+          View Prompt Kit (₹999) &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- TOOL 2: AI TOKEN & COST ESTIMATOR -->
+    <div class="interactive-tool-card" id="cost-calculator">
+      <div class="tool-heading-row">
+        <div>
+          <div class="eyebrow" style="color: #16a34a;">UTILITY 02</div>
+          <h2 class="tool-title">AI Model Token &amp; Monthly Cost Calculator</h2>
+          <p class="tool-subtitle">Estimate and compare your monthly API bill across Claude 3.5 Sonnet, GPT-4o, Gemini 2.5, and DeepSeek.</p>
+        </div>
+        <span class="tool-badge-free">Live Calculator</span>
+      </div>
+
+      <div class="calc-grid">
+        <!-- Sliders -->
+        <div>
+          <div class="calc-slider-box">
+            <div class="calc-slider-header">
+              <span class="tool-label">Daily API Requests:</span>
+              <strong id="dailyReqLabel" style="color: var(--black);">2,500 / day</strong>
+            </div>
+            <input type="range" min="100" max="50000" step="100" value="2500" class="calc-slider" id="dailyReqSlider" oninput="updateCostCalculator()" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--gray-500); margin-top: 0.2rem;">
+              <span>100</span>
+              <span>10,000</span>
+              <span>50,000</span>
+            </div>
+          </div>
+
+          <div class="calc-slider-box">
+            <div class="calc-slider-header">
+              <span class="tool-label">Avg. Input Tokens / Request:</span>
+              <strong id="inputTokensLabel" style="color: var(--black);">900 tokens</strong>
+            </div>
+            <input type="range" min="100" max="10000" step="100" value="900" class="calc-slider" id="inputTokensSlider" oninput="updateCostCalculator()" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--gray-500); margin-top: 0.2rem;">
+              <span>100 (~75 words)</span>
+              <span>5,000</span>
+              <span>10,000</span>
+            </div>
+          </div>
+
+          <div class="calc-slider-box">
+            <div class="calc-slider-header">
+              <span class="tool-label">Avg. Output Tokens / Request:</span>
+              <strong id="outputTokensLabel" style="color: var(--black);">450 tokens</strong>
+            </div>
+            <input type="range" min="50" max="4000" step="50" value="450" class="calc-slider" id="outputTokensSlider" oninput="updateCostCalculator()" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--gray-500); margin-top: 0.2rem;">
+              <span>50 (~35 words)</span>
+              <span>2,000</span>
+              <span>4,000</span>
+            </div>
+          </div>
+
+          <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius-sm); border: 1px solid var(--gray-200); margin-top: 1.2rem;">
+            <div style="font-size: 0.8rem; color: var(--gray-600); margin-bottom: 0.4rem;">
+              Monthly Volume: <strong id="monthlyReqLabel">75,000 calls</strong>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--gray-600);">
+              Total Tokens: <strong id="monthlyTokensLabel">101.25M tokens/month</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div>
+          <div class="calc-table-wrap">
+            <table class="calc-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Est. USD / mo</th>
+                  <th>Est. INR / mo</th>
+                  <th>Rate (In / Out per 1M)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Claude 3.5 Sonnet</strong></td>
+                  <td id="costSonnetUsd">$708.75</td>
+                  <td id="costSonnetInr">₹61,307</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$3.00 / $15.00</td>
+                </tr>
+                <tr>
+                  <td><strong>Claude 3.5 Haiku</strong></td>
+                  <td class="calc-highlight" id="costHaikuUsd">$189.00</td>
+                  <td class="calc-highlight" id="costHaikuInr">₹16,349</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$0.80 / $4.00</td>
+                </tr>
+                <tr>
+                  <td><strong>OpenAI GPT-4o</strong></td>
+                  <td id="costGpt4oUsd">$506.25</td>
+                  <td id="costGpt4oInr">₹43,791</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$2.50 / $10.00</td>
+                </tr>
+                <tr>
+                  <td><strong>GPT-4o Mini</strong></td>
+                  <td class="calc-highlight" id="costGptMiniUsd">$30.38</td>
+                  <td class="calc-highlight" id="costGptMiniInr">₹2,628</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$0.15 / $0.60</td>
+                </tr>
+                <tr>
+                  <td><strong>Gemini 1.5 Flash</strong></td>
+                  <td class="calc-highlight" id="costGeminiUsd">$15.19</td>
+                  <td class="calc-highlight" id="costGeminiInr">₹1,314</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$0.075 / $0.30</td>
+                </tr>
+                <tr>
+                  <td><strong>DeepSeek-R1</strong></td>
+                  <td class="calc-highlight" id="costDeepseekUsd">$111.04</td>
+                  <td class="calc-highlight" id="costDeepseekInr">₹9,605</td>
+                  <td style="font-size: 0.75rem; color: var(--gray-500);">$0.55 / $2.19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: 1rem; padding: 0.8rem 1rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); font-size: 0.82rem; color: #166534;">
+            💡 <strong>Smart Architecture Strategy:</strong> Implement hybrid model routing. Route simple classification and routing prompts to Haiku or Gemini Flash, saving up to <strong>74%</strong> before routing complex reasoning tasks to Sonnet!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 3: AI AGENT READINESS AUDIT -->
+    <div class="interactive-tool-card" id="agent-audit">
+      <div class="tool-heading-row">
+        <div>
+          <div class="eyebrow" style="color: #8b5cf6;">UTILITY 03</div>
+          <h2 class="tool-title">Autonomous AI Agent Readiness Diagnostic</h2>
+          <p class="tool-subtitle">Quickly evaluate if your app is architected for production-grade autonomous agent loops.</p>
+        </div>
+        <div style="text-align: right;">
+          <span style="font-size: 1.4rem; font-weight: 800; color: #16a34a;" id="readinessScore">50%</span>
+          <div style="font-size: 0.75rem; color: var(--gray-500);">Readiness Score</div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+        <label style="display: flex; align-items: center; gap: 0.8rem; padding: 1rem; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); cursor: pointer; background: #f8fafc;">
+          <input type="checkbox" id="check1" checked onchange="updateReadinessScore()" style="width: 18px; height: 18px; accent-color: #2563eb;" />
+          <div>
+            <strong style="font-size: 0.88rem; display: block;">Structured Tool Schemas</strong>
+            <span style="font-size: 0.78rem; color: var(--gray-500);">Strict JSON/Zod schemas for all tool calls</span>
+          </div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 0.8rem; padding: 1rem; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); cursor: pointer; background: #fff;">
+          <input type="checkbox" id="check2" onchange="updateReadinessScore()" style="width: 18px; height: 18px; accent-color: #2563eb;" />
+          <div>
+            <strong style="font-size: 0.88rem; display: block;">Loop Guardrails &amp; Retries</strong>
+            <span style="font-size: 0.78rem; color: var(--gray-500);">Max step limits &amp; graceful error recovery</span>
+          </div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 0.8rem; padding: 1rem; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); cursor: pointer; background: #f8fafc;">
+          <input type="checkbox" id="check3" checked onchange="updateReadinessScore()" style="width: 18px; height: 18px; accent-color: #2563eb;" />
+          <div>
+            <strong style="font-size: 0.88rem; display: block;">Token &amp; Budget Capping</strong>
+            <span style="font-size: 0.78rem; color: var(--gray-500);">Automated spending limits per user session</span>
+          </div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 0.8rem; padding: 1rem; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); cursor: pointer; background: #fff;">
+          <input type="checkbox" id="check4" onchange="updateReadinessScore()" style="width: 18px; height: 18px; accent-color: #2563eb;" />
+          <div>
+            <strong style="font-size: 0.88rem; display: block;">Human-in-the-Loop Fallback</strong>
+            <span style="font-size: 0.78rem; color: var(--gray-500);">Manual approval for destructive tool actions</span>
+          </div>
+        </label>
+      </div>
+
+      <div style="text-align: center;">
+        <button onclick="switchTab('advisory')" class="btn-outline" style="font-size: 0.85rem;">
+          Want Harsh to review your system architecture? Book a Code &amp; Agent Audit &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- GOOGLE ADSENSE MONETIZATION CONTAINER -->
+    <div class="adsense-card-container">
+      <div class="adsense-label">Advertisement · Google AdSense</div>
+      <ins class="adsbygoogle"
+           style="display:block; min-height: 90px;"
+           data-ad-client="ca-pub-6625278402778620"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <div style="font-size: 0.75rem; color: var(--gray-500); margin-top: 0.5rem;">
+        Tools supported by community engagement &amp; sponsor partners
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── TAB 2: DIGITAL PRODUCTS & KITS ── -->
+  <div id="tabContent-kits" style="display: none;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="eyebrow">DIGITAL STORE</div>
+      <h2 class="section-title">Production Starter Kits &amp; <em>Playbooks</em></h2>
+      <p class="hero-desc" style="max-width: 650px; margin: 0 auto;">
+        Stop reinventing the wheel. Jumpstart your AI startups and software platforms with production-tested boilerplates built by Harsh Vashishtha.
+      </p>
+    </div>
+
+    <div class="products-cards-grid">
+      <!-- Product 1 -->
+      <div class="product-card featured">
+        <span class="product-ribbon">Most Popular</span>
+        <div class="product-category">Full-Stack Codebase</div>
+        <h3 class="product-title">Claude &amp; Next.js AI Agent Starter Kit</h3>
+        <p class="product-desc">Production-ready boilerplate for building autonomous AI agents with Server-Sent Events (SSE) streaming, Supabase auth, and payment billing.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹2,499</span>
+          <span class="product-price-old">₹4,999</span>
+          <span class="product-currency-note">($29 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Next.js 16 App Router + TypeScript + Tailwind CSS</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Claude API &amp; Anthropic SDK streaming architecture</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Autonomous tool-calling and memory injection loops</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Supabase Database &amp; Authentication pre-integrated</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Razorpay &amp; Stripe webhook subscription templates</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>One-click Vercel deployment with 0 config needed</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Lifetime updates &amp; access to private GitHub repo</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('Claude & Next.js AI Agent Starter Kit', '₹2,499', '$29')">
+          <i class="ti ti-shopping-cart"></i> Get Instant Access &rarr;
+        </button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <span class="product-ribbon" style="background:#10b981;">Best Value</span>
+        <div class="product-category">Developer Resource</div>
+        <h3 class="product-title">System Prompt Engineering Master File</h3>
+        <p class="product-desc">Over 100+ battle-tested system prompt templates, XML guardrails, and chain-of-thought reasoning blueprints for Claude 3.7, GPT-4o, and Gemini.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹999</span>
+          <span class="product-price-old">₹1,999</span>
+          <span class="product-currency-note">($12 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>100+ production prompts for Coding, SaaS, Data &amp; Agents</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>XML tagged structured templates for Claude &amp; GPT</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>RAG hallucination reduction &amp; guardrail patterns</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Persona definitions &amp; negative constraint rules</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Copy-paste Markdown &amp; JSON format files</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Free quarterly prompt updates included</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('System Prompt Engineering Master File', '₹999', '$12')">
+          <i class="ti ti-shopping-cart"></i> Get Instant Access &rarr;
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-category">Architecture Guide</div>
+        <h3 class="product-title">PayQIA Fintech PWA Architecture Blueprint</h3>
+        <p class="product-desc">The complete architectural blueprint and engineering breakdown behind PayQIA — an AI-powered personal finance progressive web app built for Indian users.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹1,499</span>
+          <span class="product-price-old">₹2,999</span>
+          <span class="product-currency-note">($19 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>PWA 5-tab responsive navigation design system</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Local Indian SMS parsing &amp; AI expense categorizer logic</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Supabase schema &amp; Prisma data models</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>AI financial advisory prompt engineering patterns</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>High-performance client caching &amp; offline sync guide</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Full architectural diagrams &amp; technical spec PDF</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('PayQIA Fintech PWA Architecture Blueprint', '₹1,499', '$19')">
+          <i class="ti ti-shopping-cart"></i> Get Instant Access &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TAB 3: 1-ON-1 ADVISORY ── -->
+  <div id="tabContent-advisory" style="display: none;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="eyebrow">CONSULTING &amp; ADVISORY</div>
+      <h2 class="section-title">Work 1-on-1 With <em>Harsh Vashishtha</em></h2>
+      <p className="hero-desc" style="max-width: 650px; margin: 0 auto;">
+        Get direct strategic and technical guidance on architecting scalable AI agents, fine-tuning LLM pipelines, reducing cloud &amp; API costs, or launching your tech product in India.
+      </p>
+    </div>
+
+    <div class="consult-grid">
+      <!-- Advisory 1 -->
+      <div class="consult-card">
+        <span class="product-ribbon">High Demand</span>
+        <div class="product-category">1-on-1 Consultation</div>
+        <h3 class="product-title">45-Min AI &amp; Product Architecture Session</h3>
+        <p class="product-desc">Direct strategy video call with Harsh Vashishtha. Get actionable advice on LLM system architecture, reducing AI API costs, and shipping SaaS in India.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹4,999</span>
+          <span class="product-price-old">₹7,999</span>
+          <span class="product-currency-note">($59 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>45-minute private 1-on-1 Google Meet consultation</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Architecture review of your AI app or startup roadmap</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>LLM selection, prompt engineering &amp; latency optimization</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Cost reduction strategies for Claude &amp; OpenAI APIs</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Recording &amp; actionable executive action summary sent post-call</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('45-Min AI & Product Architecture Session', '₹4,999', '$59')">
+          <i class="ti ti-calendar"></i> Book Strategy Session &rarr;
+        </button>
+      </div>
+
+      <!-- Advisory 2 -->
+      <div class="consult-card">
+        <div class="product-category">Deep-Dive Technical Review</div>
+        <h3 class="product-title">Comprehensive SaaS &amp; AI Agent Code Audit</h3>
+        <p class="product-desc">In-depth review of your Next.js codebase, AI agent loop, database queries, and deployment pipeline to identify latency, security, and scaling bottlenecks.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹9,999</span>
+          <span class="product-price-old">₹14,999</span>
+          <span class="product-currency-note">($129 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Deep dive into your private repository or architecture spec</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Security review (API key exposure, injection &amp; prompt guardrails)</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Performance audit (Next.js server actions, bundle size, caching)</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Detailed written PDF audit report with concrete code fixes</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>60-minute walkthrough call to discuss recommendations</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('Comprehensive SaaS & AI Agent Code Audit', '₹9,999', '$129')">
+          <i class="ti ti-calendar"></i> Book Strategy Session &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TAB 4: NEWSLETTER SPONSORSHIP ── -->
+  <div id="tabContent-sponsor" style="display: none;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="eyebrow">PARTNERSHIPS &amp; REACH</div>
+      <h2 class="section-title">Sponsor <em>The Intelligent Edge</em></h2>
+      <p className="hero-desc" style="max-width: 650px; margin: 0 auto;">
+        Put your software, AI product, or API in front of over 2,500+ decision-makers, senior engineers, founders, and AI builders reading every week.
+      </p>
+    </div>
+
+    <div class="consult-grid">
+      <div class="consult-card">
+        <div class="product-category">Newsletter Sponsorship</div>
+        <h3 class="product-title">Headline Sponsor on The Intelligent Edge</h3>
+        <p class="product-desc">Prominently feature your product, AI tool, or dev service at the top of The Intelligent Edge newsletter reaching 2,500+ tech professionals and founders.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹3,999</span>
+          <span class="product-price-old">₹5,999</span>
+          <span class="product-currency-note">($49 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Top-of-edition headline placement with logo &amp; 80-word pitch</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Direct clickable CTA button to your website / product</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Sent to 2,500+ active email &amp; LinkedIn subscribers</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Permanent archive on harshvashishtha.space/newsletter</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Click tracking &amp; performance report delivered post-send</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('Headline Sponsor on The Intelligent Edge', '₹3,999', '$49')">
+          <i class="ti ti-speakerphone"></i> Book Sponsorship Slot &rarr;
+        </button>
+      </div>
+
+      <div class="consult-card">
+        <span class="product-ribbon" style="background:#8b5cf6;">Maximum Impact</span>
+        <div class="product-category">Dedicated Deep-Dive</div>
+        <h3 class="product-title">Co-Branded Case Study &amp; Deep Dive Edition</h3>
+        <p class="product-desc">A full edition of The Intelligent Edge dedicated to breaking down your product, technical architecture, or company case study.</p>
+
+        <div class="product-price-row">
+          <span class="product-price-current">₹7,999</span>
+          <span class="product-price-old">₹12,000</span>
+          <span class="product-currency-note">($99 USD)</span>
+        </div>
+
+        <ul class="product-features-list">
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Full dedicated 800-1200 word in-depth technical case study</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Written by Harsh Vashishtha with architecture diagrams &amp; insights</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Sent exclusively to 2,500+ subscribers and shared on LinkedIn &amp; X</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Permanent SEO-optimized article on harshvashishtha.space</span></li>
+          <li class="product-feature-item"><i class="ti ti-check"></i><span>Direct founder attribution and multi-touch lead generation</span></li>
+        </ul>
+
+        <button type="button" class="product-buy-btn" onclick="openCheckout('Co-Branded Case Study & Deep Dive Edition', '₹7,999', '$99')">
+          <i class="ti ti-speakerphone"></i> Book Sponsorship Slot &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SUPPORT / BUY ME A COFFEE ── -->
+  <div style="border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 2.5rem; background: #fafafa; margin-top: 3rem; margin-bottom: 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+    <div>
+      <div class="eyebrow" style="color: #ea580c;">SUPPORT INDEPENDENT AI RESEARCH</div>
+      <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--black); margin-bottom: 0.4rem;">
+        Fuel Future Open-Source &amp; Free AI Tools
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--gray-600); max-width: 540px;">
+        If you found these tools or open-source guides helpful, consider supporting Harsh&apos;s work. Every contribution directly funds GPU compute, server hosting, and new AI utilities!
+      </p>
+    </div>
+    <div style="display: flex; flexDirection: column; gap: 0.8rem; minWidth: 240px;">
+      <a href="mailto:vashishthaharsh97@gmail.com?subject=Support%20Tip%20via%20UPI" class="btn-dark" style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <i class="ti ti-coffee"></i> Buy Me a Coffee (UPI / Card)
+      </a>
+      <div style="font-size: 0.78rem; color: var(--gray-500); text-align: center;">
+        UPI ID: <code style="color: var(--black); font-weight: 600;">vashishthaharsh97@gmail.com</code>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── CHECKOUT MODAL ── -->
+<div class="checkout-modal-backdrop" id="checkoutModal" style="display: none;" onclick="closeCheckout()">
+  <div class="checkout-modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close-btn" onclick="closeCheckout()" aria-label="Close modal">&times;</button>
+
+    <div id="modalOrderForm">
+      <div class="eyebrow" style="color: #2563eb;">INSTANT CHECKOUT &amp; FULFILLMENT</div>
+      <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0.4rem 0 0.8rem; color: var(--black);" id="modalProductTitle">
+        Claude &amp; Next.js AI Agent Starter Kit
+      </h3>
+      <div style="padding: 1rem; background: #f8fafc; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <span style="font-size: 0.75rem; color: var(--gray-500); display: block;">Total Investment:</span>
+          <strong style="font-size: 1.6rem; color: var(--black);" id="modalProductPriceInr">₹2,499</strong>
+        </div>
+        <span style="font-size: 0.85rem; color: var(--gray-600);" id="modalProductPriceUsd">
+          ($29 USD)
+        </span>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <div style="font-size: 0.82rem; font-weight: 600; color: var(--gray-700); margin-bottom: 0.5rem;">
+          Supported Payment Methods:
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; background: #eff6ff; color: #1e40af; border-radius: 4px; font-weight: 500;">
+            ⚡ UPI (GPay, PhonePe, Paytm)
+          </span>
+          <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; background: #f0fdf4; color: #166534; border-radius: 4px; font-weight: 500;">
+            💳 Credit / Debit Cards
+          </span>
+          <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; background: #faf5ff; color: #6b21a8; border-radius: 4px; font-weight: 500;">
+            🌐 Net Banking &amp; PayPal
+          </span>
+        </div>
+      </div>
+
+      <form onsubmit="handleOrderSubmit(event)">
+        <div class="tool-input-group" style="margin-bottom: 1.2rem;">
+          <label class="tool-label">Enter your Email for Instant Delivery / Booking</label>
+          <input type="email" id="modalEmailInput" required placeholder="your.email@example.com" class="tool-input" />
+        </div>
+
+        <button type="submit" class="product-buy-btn" style="margin-bottom: 0.8rem;">
+          Proceed to Complete Payment &rarr;
+        </button>
+      </form>
+
+      <div style="text-align: center;">
+        <a id="modalMailLink" href="mailto:vashishthaharsh97@gmail.com" style="font-size: 0.8rem; color: var(--gray-600); text-decoration: underline;">
+          Prefer to pay via direct email or bank transfer? Click here
+        </a>
+      </div>
+    </div>
+
+    <div id="modalOrderSuccess" style="display: none; text-align: center; padding: 1rem 0;">
+      <div style="font-size: 3rem; color: #16a34a; margin-bottom: 1rem;">
+        <i class="ti ti-circle-check"></i>
+      </div>
+      <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.6rem;">
+        Order Initiated!
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.6;" id="modalSuccessMessage">
+        Thank you! We have logged your request.
+      </p>
+      <div style="padding: 1.2rem; background: var(--gray-50); border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: left; font-size: 0.85rem;">
+        <p style="margin-bottom: 0.5rem;"><strong>Direct UPI Transfer Details:</strong></p>
+        <p style="margin: 0.2rem 0;">UPI ID: <code>vashishthaharsh97@gmail.com</code></p>
+        <p style="margin: 0.2rem 0;">Name: Harsh Vashishtha</p>
+        <p style="margin-top: 0.6rem; color: var(--gray-600); font-size: 0.8rem;">
+          Once payment is sent, you will receive an automatic email with repository credentials or Google Meet invitation within 15 minutes.
+        </p>
+      </div>
+      <a id="modalConfirmReceiptBtn" href="mailto:vashishthaharsh97@gmail.com" class="btn-dark" style="display: inline-block; width: 100%; text-align: center;">
+        Send Payment Receipt Confirmation &rarr;
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Harsh Vashishtha</div>
+      <div class="footer-tagline">AI Engineer, Agent Builder &amp; Founder of Haqikos. Building intelligent products for India and the world.</div>
+      <div class="footer-social">
+        <a class="social-btn" href="https://linkedin.com/in/theharshvashishtha" target="_blank" rel="noopener" title="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+        <a class="social-btn" href="https://github.com/Harsh-Vashishtha-G" target="_blank" rel="noopener" title="GitHub"><i class="ti ti-brand-github"></i></a>
+        <a class="social-btn" href="https://youtube.com/@TheHarshVashishtha" target="_blank" rel="noopener" title="YouTube"><i class="ti ti-brand-youtube"></i></a>
+        <a class="social-btn" href="https://x.com/TheHVashishtha" target="_blank" rel="noopener" title="X"><i class="ti ti-brand-x"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="tools.html" style="color: #60a5fa; font-weight: 600;">AI Tools &amp; Store (Hot)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products &amp; Studio</h4>
+      <ul class="footer-links">
+        <li><a href="#prompt-architect">AI Prompt Architect</a></li>
+        <li><a href="#cost-calculator">API Cost Estimator</a></li>
+        <li><a href="#kits">SaaS Agent Starters</a></li>
+        <li><a href="https://haqikos.com" target="_blank" rel="noopener">Haqikos</a></li>
+        <li><a href="https://payqia.com" target="_blank" rel="noopener">PayQIA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:vashishthaharsh97@gmail.com">Email Me</a></li>
+        <li><a href="https://linkedin.com/in/theharshvashishtha" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/Harsh-Vashishtha-G" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="/assets/resume/Harsh%20Vashishtha%20-%20Resume.pdf" target="_blank" rel="noopener" download="Harsh_Vashishtha_Resume.pdf">Download Resume</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Harsh Vashishtha · India · <span>All rights reserved</span></div>
+    <div class="footer-badges">
+      <span class="badge available">● Available for Work</span>
+      <span class="badge">Founder @ Haqikos</span>
+      <span class="badge">Made in India 🇮🇳</span>
+    </div>
+    <div class="footer-legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('mobileMenu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+
+  function switchTab(tabId) {
+    var tabs = ['tools', 'kits', 'advisory', 'sponsor'];
+    tabs.forEach(function(t) {
+      var content = document.getElementById('tabContent-' + t);
+      var btn = document.getElementById('tabBtn-' + t);
+      if (content && btn) {
+        if (t === tabId) {
+          content.style.display = 'block';
+          btn.classList.add('active');
+        } else {
+          content.style.display = 'none';
+          btn.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  function applyPreset(text) {
+    document.getElementById('userPromptInput').value = text;
+  }
+
+  function generatePrompt() {
+    var userPrompt = document.getElementById('userPromptInput').value.trim();
+    var model = document.getElementById('modelSelect').value;
+    var persona = document.getElementById('personaSelect').value;
+    var format = document.getElementById('formatSelect').value;
+
+    var btn = document.getElementById('generatePromptBtn');
+    btn.innerHTML = '<i class="ti ti-loader"></i> Generating...';
+
+    setTimeout(function() {
+      var spec = '<system_role>\n' +
+        'You are an elite ' + persona.toUpperCase() + ' specializing in ' + model + ' deployment. Your primary objective is to execute the following mission with zero hallucination, strict adherence to best practices, and production-grade resilience.\n' +
+        '</system_role>\n\n' +
+        '<task_definition>\n' +
+        userPrompt + '\n' +
+        '</task_definition>\n\n' +
+        '<guiding_principles>\n' +
+        '1. Deterministic & Precise: Prioritize verifiable truth, strict typed schemas, and explicit boundary handling.\n' +
+        '2. Architecture Standard: Built according to ' + format + ' specifications.\n' +
+        '3. Resilience: Gracefully handle network timeouts, rate limits, and malformed client inputs with fallback recovery.\n' +
+        '4. Security: Never expose internal secrets, API credentials, or unvetted system prompts to end users.\n' +
+        '</guiding_principles>\n\n' +
+        '<execution_workflow>\n' +
+        'Step 1: Parse the user\'s intent and decompose into sub-tasks.\n' +
+        'Step 2: Validate state against guardrails and context boundaries.\n' +
+        'Step 3: Execute target tools or logic deterministically.\n' +
+        'Step 4: Format output strictly using ' + format + ' without conversational filler.\n' +
+        '</execution_workflow>\n\n' +
+        '<output_instructions>\n' +
+        'Provide the final response formatted with crisp structure, executable code/markdown, and concise architectural explanations.\n' +
+        '</output_instructions>';
+
+      document.getElementById('promptOutputCode').textContent = spec;
+      document.getElementById('promptOutputBox').style.display = 'block';
+      btn.innerHTML = '<i class="ti ti-sparkles"></i> Generate Structured System Prompt';
+    }, 400);
+  }
+
+  function copyPrompt() {
+    var text = document.getElementById('promptOutputCode').textContent;
+    navigator.clipboard.writeText(text).then(function() {
+      document.getElementById('copyIcon').className = 'ti ti-check';
+      document.getElementById('copyText').textContent = 'Copied!';
+      setTimeout(function() {
+        document.getElementById('copyIcon').className = 'ti ti-copy';
+        document.getElementById('copyText').textContent = 'Copy Prompt';
+      }, 2000);
+    });
+  }
+
+  function updateCostCalculator() {
+    var daily = parseInt(document.getElementById('dailyReqSlider').value, 10);
+    var inTokens = parseInt(document.getElementById('inputTokensSlider').value, 10);
+    var outTokens = parseInt(document.getElementById('outputTokensSlider').value, 10);
+
+    document.getElementById('dailyReqLabel').textContent = daily.toLocaleString() + ' / day';
+    document.getElementById('inputTokensLabel').textContent = inTokens.toLocaleString() + ' tokens';
+    document.getElementById('outputTokensLabel').textContent = outTokens.toLocaleString() + ' tokens';
+
+    var monthlyReq = daily * 30;
+    var inM = (monthlyReq * inTokens) / 1000000;
+    var outM = (monthlyReq * outTokens) / 1000000;
+
+    document.getElementById('monthlyReqLabel').textContent = monthlyReq.toLocaleString() + ' calls';
+    document.getElementById('monthlyTokensLabel').textContent = (inM + outM).toFixed(2) + 'M tokens/month';
+
+    var sonnet = (inM * 3.0) + (outM * 15.0);
+    var haiku = (inM * 0.8) + (outM * 4.0);
+    var gpt4o = (inM * 2.5) + (outM * 10.0);
+    var gptMini = (inM * 0.15) + (outM * 0.60);
+    var gemini = (inM * 0.075) + (outM * 0.30);
+    var deepseek = (inM * 0.55) + (outM * 2.19);
+
+    var rate = 86.5;
+    function formatInr(usd) {
+      return '₹' + Math.round(usd * rate).toLocaleString('en-IN');
+    }
+
+    document.getElementById('costSonnetUsd').textContent = '$' + sonnet.toFixed(2);
+    document.getElementById('costSonnetInr').textContent = formatInr(sonnet);
+
+    document.getElementById('costHaikuUsd').textContent = '$' + haiku.toFixed(2);
+    document.getElementById('costHaikuInr').textContent = formatInr(haiku);
+
+    document.getElementById('costGpt4oUsd').textContent = '$' + gpt4o.toFixed(2);
+    document.getElementById('costGpt4oInr').textContent = formatInr(gpt4o);
+
+    document.getElementById('costGptMiniUsd').textContent = '$' + gptMini.toFixed(2);
+    document.getElementById('costGptMiniInr').textContent = formatInr(gptMini);
+
+    document.getElementById('costGeminiUsd').textContent = '$' + gemini.toFixed(2);
+    document.getElementById('costGeminiInr').textContent = formatInr(gemini);
+
+    document.getElementById('costDeepseekUsd').textContent = '$' + deepseek.toFixed(2);
+    document.getElementById('costDeepseekInr').textContent = formatInr(deepseek);
+  }
+
+  function updateReadinessScore() {
+    var c1 = document.getElementById('check1').checked;
+    var c2 = document.getElementById('check2').checked;
+    var c3 = document.getElementById('check3').checked;
+    var c4 = document.getElementById('check4').checked;
+
+    var count = [c1, c2, c3, c4].filter(Boolean).length;
+    var pct = Math.round((count / 4) * 100);
+    var scoreEl = document.getElementById('readinessScore');
+    scoreEl.textContent = pct + '%';
+    scoreEl.style.color = pct >= 75 ? '#16a34a' : '#ea580c';
+  }
+
+  var currentProduct = {};
+  function openCheckout(title, inr, usd) {
+    currentProduct = { title: title, inr: inr, usd: usd };
+    document.getElementById('modalProductTitle').textContent = title;
+    document.getElementById('modalProductPriceInr').textContent = inr;
+    document.getElementById('modalProductPriceUsd').textContent = '(' + usd + ' USD)';
+    document.getElementById('modalMailLink').href = 'mailto:vashishthaharsh97@gmail.com?subject=Inquiry%20for%20' + encodeURIComponent(title);
+
+    document.getElementById('modalOrderForm').style.display = 'block';
+    document.getElementById('modalOrderSuccess').style.display = 'none';
+    document.getElementById('checkoutModal').style.display = 'flex';
+  }
+
+  function closeCheckout() {
+    document.getElementById('checkoutModal').style.display = 'none';
+  }
+
+  function handleOrderSubmit(e) {
+    e.preventDefault();
+    var email = document.getElementById('modalEmailInput').value;
+    document.getElementById('modalSuccessMessage').innerHTML = 'Thank you! We have logged your request for <strong>' + currentProduct.title + '</strong> for <strong>' + email + '</strong>.';
+    document.getElementById('modalConfirmReceiptBtn').href = 'mailto:vashishthaharsh97@gmail.com?subject=Payment%20Confirmation%20for%20' + encodeURIComponent(currentProduct.title) + '&body=I%20have%20sent%20payment%20for%20' + encodeURIComponent(currentProduct.title) + '%20from%20email%20' + encodeURIComponent(email);
+    document.getElementById('modalOrderForm').style.display = 'none';
+    document.getElementById('modalOrderSuccess').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
